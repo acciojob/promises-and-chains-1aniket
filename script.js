@@ -1,4 +1,4 @@
-document.getElementById("sub_btn").addEventListener("click", () => {
+document.getElementById("btn").addEventListener("click", () => {
     const age = Number(document.getElementById("age").value);
     const name = document.getElementById("name").value;
 
