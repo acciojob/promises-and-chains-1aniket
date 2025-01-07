@@ -1,17 +1,13 @@
 document.getElementById("btn").addEventListener("click", () => {
-    const age = Number(document.getElementById("age").value);
+   
+	const age = Number(document.getElementById("age").value);
     const name = document.getElementById("name").value;
 
-    if (!name) {
-        alert("Please enter your name.");
-        return;
-    }
-
-    if (isNaN(age) || age <= 0) {
-        alert("Please enter a valid age.");
-        return;
-    }
-
+	if(!age || !name)
+	{
+		alert("Please enter valid details");
+		return;
+	}
     verify(age, name)
         .then((data) => {
             alert(data);
